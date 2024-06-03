@@ -183,7 +183,7 @@ section{
     gap: 1rem;
     margin:2rem 0;
 }
-.offer-countdown .content .box{
+.offer-countdown .content .flex .box{
     width: 8rem;
     border-radius: .5rem;
     padding:1rem;
@@ -191,12 +191,12 @@ section{
     text-align: center;
 
 }
-.offer-countdown .content .box .count{
+.offer-countdown .content .flex .box .count{
     font-size: 3rem;
     color: var(--black);
 }
 
-.offer-countdown .content .box span{
+.offer-countdown .content .flex .box span{
     font-size: 1.5rem;
     color:var(--black);
 }
@@ -274,5 +274,16 @@ section{
     
     .home{
         min-height: 55vh;
+    }
+
+    .offer-countdown .content .flex{
+        flex-wrap: wrap;
+        padding:5rem 1.5rem;
+    }
+    .offer-countdown .content .flex .box{
+        flex:1 1 16rem;
+    }
+    .offer-countdown .content .flex .box .count{
+        font-size: 4rem;
     }
 }
