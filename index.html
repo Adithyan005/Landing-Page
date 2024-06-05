@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Happy Diwali</title>
 </head>
 <body>
@@ -94,35 +95,143 @@
     </div>
 
     <section class="offers" id="offers">
-        <section class="products-slidebar">
-            <div>
-                <div class="box">
-                    <img src="17.webp" width="40%">
+        <div class="swiper products-slidebar">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide box">
+                    <img src="17.webp" width="40%" height="20%">
                     <h3>Smartphones</h3>
                     <p>Upto 20% off</p>
                     <a href="#" class="btn">let's go</a>
                 </div>
 
-                <div class="box">
-                    <img src="18.webp" width="40%">
+                <div class="swiper-slide box">
+                    <img src="18.webp" width="40%" height="30%">
                     <h3>Smart Watches</h3>
                     <p>Upto 50% off</p>
                     <a href="#" class="btn">let's go</a>
                 </div>
 
-                <div class="box">
-                    <img src="" width="30%">
-                    <h3>Smartphones</h3>
+                <div class="swiper-slide box">
+                    <img src="19.jpg" width="40%">
+                    <h3>Furnitures</h3>
+                    <p>Upto 10% off</p>
+                    <a href="#" class="btn">let's go</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="20.jpg" width="40%">
+                    <h3>Shoes</h3>
+                    <p>Upto 50% off</p>
+                    <a href="#" class="btn">let's go</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="21.jpg" width="40%">
+                    <h3>Laptops</h3>
+                    <p>Upto 30% off</p>
+                    <a href="#" class="btn">let's go</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="22.webp" width="40%">
+                    <h3>Formal Wear</h3>
                     <p>Upto 20% off</p>
                     <a href="#" class="btn">let's go</a>
                 </div>
+
+                <div class="swiper-slide box">
+                    <img src="23.webp" width="40%">
+                    <h3>Casual Wear</h3>
+                    <p>Upto 60% off</p>
+                    <a href="#" class="btn">let's go</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="24.png" width="40%">
+                    <h3>Cosmetics</h3>
+                    <p>Upto 15% off</p>
+                    <a href="#" class="btn">let's go</a>
+                </div>
             </div>
-        </section>
+
+            <div class="swiper-pagination"></div>
+            
+        </div>
+    
     </section>
 
 
+    <div class="contact-container">
+        <section class="row">
+            <div class="info-container">
+                <div class="box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Mumbai, India - 234 567</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 99234 87632</p>
+                        <p>+91 97811 67494</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@gmail.com</p>
+                        <p>example@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" method="post">
+                <h3>Get In Touch</h3>
+                <div class="flex">
+                    <input type="text" name="name" maxlength="30" class="input" placeholder="Your Name">
+                    <input type="number" name="number" maxlength="10" class="input" placeholder="Your Number">
+                </div>
+                <input type="email" name="email" maxlength="30" placeholder="Your Email" class="input">
+                <textarea name="message" class="input" cols="30" rows="10" maxlength="1000" placeholder="Your Message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </section>
+    </div>
+
+    
+    <footer class="footer">
+        <section>Created By <span> Adithyan</span> | all rights reserved</section>
+    </footer>
+
+    <div class="loader-container">
+        <img src="27.gif" alt="">
+    </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

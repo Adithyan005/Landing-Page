@@ -59,3 +59,37 @@ function countDown(){
 setInterval(function(){
     countDown()
 },1000);
+
+var swiper = new Swiper(".products-slidebar", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop:true,
+    grabCursor:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 0,
+        
+      },
+      768: {
+        slidesPerView: 2,
+        
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+  function loader(){
+    document.querySelector('.loader-container').classList.add('active');
+  }
+
+  function fadeOut(){
+    setInterval(loader, 2000);
+  }
+
+  window.onload=fadeOut();
